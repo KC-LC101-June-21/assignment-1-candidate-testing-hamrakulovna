@@ -58,11 +58,10 @@ for (let i=0; i<correctAnswers.length; i++){
   numberOfCorrectAnswers++;
 }
 }
-console.log(numberOfCorrectAnswers);
 let numberOfQuizeQuestions=questions.length;
 
   let grade=(numberOfCorrectAnswers/numberOfQuizeQuestions)*100;
-  console.log(grade);
+
 console.log(`>>> Overall Grade: ${grade}% (${numberOfCorrectAnswers} of ${numberOfQuizeQuestions} responses correct) <<<`);
 
 if (grade<80){
