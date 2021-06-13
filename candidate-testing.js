@@ -53,16 +53,16 @@ function gradeQuiz(candidateAnswers) {
 let numberOfCorrectAnswers=Number(0);
 
 for (let i=0; i<correctAnswers.length; i++){
-  
- if(correctAnswers[i].toLowerCase==candidateAnswers[i].toLowerCase){
+
+ if(correctAnswers[i].toLowerCase()===candidateAnswers[i].toLowerCase()){
   numberOfCorrectAnswers++;
 }
 }
-
+console.log(numberOfCorrectAnswers);
 let numberOfQuizeQuestions=questions.length;
 
   let grade=(numberOfCorrectAnswers/numberOfQuizeQuestions)*100;
-  
+  console.log(grade);
 console.log(`>>> Overall Grade: ${grade}% (${numberOfCorrectAnswers} of ${numberOfQuizeQuestions} responses correct) <<<`);
 
 if (grade<80){
