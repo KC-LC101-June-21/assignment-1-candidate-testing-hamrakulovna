@@ -75,7 +75,7 @@ if (grade<80){
 function runProgram() {
   askForName();
   // TODO 1.1c: Ask for candidate's name //
-  console.log("Hello, "+candidateName+"!"+"\n");
+  /*console.log("Hello, "+candidateName+"!"+"\n");*/
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
